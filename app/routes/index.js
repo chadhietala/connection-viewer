@@ -1,7 +1,9 @@
 var IndexRoute = Ember.Route.extend({
+
   model: function() {
-    return ['red', 'yellow', 'blue'];
+    return this.store.findAll( 'user' );
   }
+
 });
 
 export default IndexRoute;

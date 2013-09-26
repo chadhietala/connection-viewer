@@ -1,0 +1,24 @@
+<div class="connection-viewer">
+  <div class="top-bar">
+    <label for="all">
+      {{input id="all" type="checkbox" checked=toggleAll}}
+      Select All
+    </label>
+    <span class="number-selected">
+      {{#if zeroConnections}}
+        None
+        {{else}}
+        {{totalPendingConnections}}
+      {{/if}}
+      Selected
+    </span>
+  </div>
+<ul class="people">
+  {{#each person in data}}
+      {{person-card name=person.fullName image=person.image description=person.description pendingConnection=person.addConnection}} <!-- Component -->
+  {{/each}}
+
+  {{! person-card name="Chad" image="image" description="hey hey" pendingConnection=true !}}
+</ul>
+
+</div>

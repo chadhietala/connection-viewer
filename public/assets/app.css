@@ -1,8 +1,60 @@
-/* Put your CSS here */
-html, body {
-    margin: 20px;
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+ * {
+  font-family: 'Helvetica Neue'
+ }
+
+.form {
+  width: 750px;
+  margin: 0 auto;
+}
+.top-bar {
+  background: #ccc;
+  padding: 10px;
+  border: 1px solid #333;
+  border-bottom: none;
 }
 
-@keyframes domChanged { from { background: yellow; } }
-@-webkit-keyframes domChanged { from { background: yellow; } }
-.ember-view { animation: domChanged 1s; -webkit-animation: domChanged 1s; }
+.number-selected {
+  display: block;
+  float: right;
+}
+.people {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  list-style: none;
+  overflow: hidden;
+  height: 370px;
+  overflow: scroll;
+  border: 1px solid #333;
+  border-top: none;
+}
+.person {
+  width: 50%;
+  height:100px;
+  float:left;
+}
+
+.media, .bd {overflow:hidden; _overflow:visible; zoom:1;}
+.media .img {float:left; margin-right: 10px;}
+.media .img img{display:block;}
+.media .imgExt{float:right; margin-left: 10px;}
+
+.img input {
+  float: left;
+}
+.img img {
+  float: left;
+}
+
+.notselected {
+  opacity: .3;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}

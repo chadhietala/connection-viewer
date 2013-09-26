@@ -1,5 +1,5 @@
-<ul>
-{{#each}}
-  <li>{{this}}</li>
-{{/each}}
-</ul>
+<form class="form" {{action addConnections on="submit"}}>
+  {{connection-viewer data=model}} <!-- Component -->
+  <input type="submit" value="Submit">
+</form>
+

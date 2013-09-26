@@ -1,0 +1,13 @@
+<li class="person media">
+  <div {{bindAttr class="pendingConnection:selected:notselected"}}>
+    <div class="img">
+      {{input type="checkbox" checked=pendingConnection}}
+      <img  {{bindAttr src=image alt=name}}>
+    </div>
+    <div class="bd">
+
+      <h3 {{action togglePerson}}>{{name}}</h3>
+      {{description}}
+    </div>
+  </div>
+</li>
